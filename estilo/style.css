@@ -9,6 +9,14 @@ body{
 	background: rgb(225, 225, 225);
 }
 
+.w30{
+	background: white;
+	width: 30%;
+	float: left;
+	padding: 30px;
+	border: 10px solid rgb(225, 225, 225);
+}
+
 .w40{
 	background: white;
 	width: 40%;
@@ -21,6 +29,23 @@ body{
 .w60{
 	background: white;
 	width: 60%;
+	float: left;
+	padding: 30px;
+	border: 10px solid rgb(225, 225, 225);
+}
+
+.w70{
+	background: white;
+	width: 70%;
+	float: left;
+	padding: 30px;
+	border: 10px solid rgb(225, 225, 225);
+
+}
+
+.w100{
+	background: white;
+	width: 100%;
 	float: left;
 	padding: 30px;
 	border: 10px solid rgb(225, 225, 225);
