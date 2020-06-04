@@ -53,5 +53,6 @@
 			}
 			mainView::render('home.php');
 		}
+		
 	}
 ?>

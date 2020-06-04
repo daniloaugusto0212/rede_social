@@ -241,4 +241,13 @@ section.cadastrp p{
 	text-decoration: none;
 }
 
+.membro-listagem span{
+	display: inline-block;
+	background: #2196f3;	
+	color: white;
+	padding: 4px 5px;
+	font-size: 14px;
+	text-decoration: none;
+}
+
 

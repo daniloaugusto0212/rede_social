@@ -34,4 +34,14 @@
                 return false;
             }
         }
+
+        public function isAmigo($idAmigo){
+			$sql = \MySql::conectar()->prepare("SELECT * FROM `tb_site.solicitacoes` WHERE (id_from = ? AND id_to = ? AND status = 1) OR (id_from = ? AND id_to = ? AND status = 1)");
+            $sql->execute(array($_SESSION['id_membro'],$idAmigo,$idAmigo,$_SESSION['id_membro']));
+            if ($sql->rowCount() == 1) {
+                return true;
+            }else{
+                return false;
+            }
+		}
     }

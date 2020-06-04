@@ -16,19 +16,19 @@
                         <div style="background-image:url('<?php echo INCLUDE_PATH_PAINEL ?>/uploads/<?php echo $value['imagem'] ?>')" class="box-imagem-wraper"></div>
                     </div>
                     <p><i class="fa fa-user"></i> <?php echo $value['nome'] ?></p>
+                    
                     <?php
-                        if ($arr['controller']->amigoPendente($value['id']) == false) {
-                      
-                    ?>
+                        if ($arr['controller']->isAmigo($value['id'])) {
+                            echo '<span style="opacity:0.4;background:green;"><i class="fa fa-check"></i></i> Amigo(a)</span>';
+                        }else if ($arr['controller']->amigoPendente($value['id']) == false) {
+                    ?>            
                     <a href="<?php echo INCLUDE_PATH ?>comunidade?addFriend=<?php echo $value['id'] ?>">Adicionar como amigo</a>
                     <?php }else{ ?>
                         <a style="opacity:0.4;" href="javascript:void(0);">Solicitação enviada!</a>
                     <?php } ?>
-                </div> 
+                </div><!--membro-listagem--> 
                 <?php } ?>
-                <div class="clear"></div>
-
-            
+                <div class="clear"></div>                            
         </div>
     </div>
 </section>
