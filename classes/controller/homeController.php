@@ -16,6 +16,7 @@
 				if ($verifica->rowCount() == 1) {
 					$info = $verifica->fetch();
 					$_SESSION['email_membro'] = $email;
+					$_SESSION['id_membro'] = $info['id'];
 					$_SESSION['nome_membro'] = $info['nome'];
 					$_SESSION['img_membro'] = $info['imagem'];
 					\Painel::alertJS("Login efetuado com sucesso!");

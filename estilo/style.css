@@ -205,3 +205,40 @@ section.cadastrp p{
 	background: #ccc;
 }
 
+.box-imagem{
+	width: 100%;
+	padding-top: 100%;
+	position: relative;
+}
+
+.box-imagem-wraper{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-size: 100% 100%;
+}
+
+.membro-listagem{
+	width: 20%;
+	float: left;
+	padding: 8px;
+}
+
+.membro-listagem p{
+	color: #4b4b4b;
+	font-size: 15px;
+	margin: 8px 0;
+}
+
+.membro-listagem a{
+	display: inline-block;
+	background: #2196f3;	
+	color: white;
+	padding: 4px 5px;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+
