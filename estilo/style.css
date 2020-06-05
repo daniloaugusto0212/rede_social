@@ -250,4 +250,25 @@ section.cadastrp p{
 	text-decoration: none;
 }
 
+.solicitacoes-table{
+	margin: 10px 0;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.solicitacoes-table td{
+	text-align: left;
+	border: 1px solid #ccc;
+}
+
+.solicitacoes-table img{
+	max-width: 90px;
+}
+
+.solicitacoes-table p{
+	margin-top: 8px;
+	font-size: 14px;
+	color: #444;
+}
+
 

@@ -24,7 +24,7 @@
                     ?>            
                     <a href="<?php echo INCLUDE_PATH ?>comunidade?addFriend=<?php echo $value['id'] ?>">Adicionar como amigo</a>
                     <?php }else{ ?>
-                        <a style="opacity:0.4;" href="javascript:void(0);">Solicitação enviada!</a>
+                        <a style="opacity:0.4;" href="javascript:void(0);">Solicitação pendente!</a>
                     <?php } ?>
                 </div><!--membro-listagem--> 
                 <?php } ?>
