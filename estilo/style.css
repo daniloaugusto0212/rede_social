@@ -202,7 +202,7 @@ section.cadastrp p{
 	width: calc(100% - 10px);
 	height: calc(100% - 10px);
 	background-size: 100% 100%;
-	background: #ccc;
+	background-color: #ccc;
 }
 
 .box-imagem{
@@ -253,12 +253,12 @@ section.cadastrp p{
 .solicitacoes-table{
 	margin: 10px 0;
 	width: 100%;
-	border-collapse: collapse;
+	
 }
 
 .solicitacoes-table td{
 	text-align: left;
-	border: 1px solid #ccc;
+	
 }
 
 .solicitacoes-table img{
@@ -269,6 +269,48 @@ section.cadastrp p{
 	margin-top: 8px;
 	font-size: 14px;
 	color: #444;
+}
+
+section.feed form{margin-top: 15px;}
+
+section.feed textarea{
+	width: 100%;
+	height: 120px;
+	border: 1px solid #ccc;
+	padding: 8px;
+}
+
+section.feed input[type=submit]{
+	background: #2196f3;
+	border: 0;
+	margin-top: 8px;
+	cursor: pointer;
+	color: white;
+	height: 25px;
+	width: 120px;
+}
+
+.post-single-user{margin: 10px 0;}
+
+.img-user-post{
+	float: left;
+}
+
+.img-user-post img{
+	width: 60px;
+	height: 60px;
+	border-radius: 30px;
+}
+
+.post-user-single{
+	float: left;
+	width: calc(100% - 60px);
+	padding: 4px 10px;
+}
+
+.post-user-single p{
+	padding: 0 5px;
+	font-size: 15px;
 }
 
 

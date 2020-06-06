@@ -13,6 +13,17 @@
                 session_destroy();
                 \Painel::redirect(INCLUDE_PATH);
             }
+
+            if (isset($_POST['feed_post'])) {
+                $mensagem = $_POST['mensagem'];
+                if ($mensagem == '') {
+                    \Painel::alertJS("Sua mensagem não pode ser vazia!");
+                    \Painel::redirect(INCLUDE_PATH.'me');
+                }else{
+                    $sql = \MySql::conectar()->prepare("INSERT INTO `tb_site.feed` VALUES(null,?,?)");
+                    $sql->execute(array($_SESSION['id_membro'],$mensagem));
+                }
+            }
             mainView::render('me.php',[],'pages/includes/headerLogado.php');
         }        
     }

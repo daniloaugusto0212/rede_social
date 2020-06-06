@@ -15,7 +15,8 @@
 	<div class="container">
 		<div style="margin-top:8px;" class="logo"><a href="<?php echo INCLUDE_PATH ?>">Rede Social</a></div>
 		<div class="btn-opt-menu">
-			<a style="background: transparent;" href="<?php echo INCLUDE_PATH ?>solicitacoes">Solictações(0)</a>
+		<?php $solicitacoesPendentes = count(\controller\solicitacoesController::listarSolicitacoes()); ?>
+			<a style="background: transparent;" href="<?php echo INCLUDE_PATH ?>solicitacoes">Solictações(<?php echo $solicitacoesPendentes ?>)</a>
 			<a style="background: transparent;" href="<?php echo INCLUDE_PATH ?>comunidade">Comunidade</a>
             <a href="<?php echo INCLUDE_PATH ?>me?sair"><i class="fa fa-times"></i> Sair</a>
         </div>

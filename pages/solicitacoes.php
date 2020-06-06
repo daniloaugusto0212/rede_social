@@ -5,7 +5,7 @@
             <table class="solicitacoes-table" >
 
             <?php
-                $solicitacoesPendentes = $arr['controller']->listarSolicitacoes();
+                $solicitacoesPendentes = \controller\solicitacoesController::listarSolicitacoes();
                 foreach ($solicitacoesPendentes as $key => $value) {
                 //Puxar informações do solicitante
                 $membro = \models\membrosModel::getMembroById($value['id_from']);
@@ -16,8 +16,8 @@
                         <p><?php echo $membro['nome'] ?></p>
                     </td>
                     <td>
-                        <a href="">Aceitar!</a>
-                        <a href="">Rejeitar!</a>
+                        <a href="<?php echo INCLUDE_PATH ?>solicitacoes?aceitar=<?php echo $value['id_from'] ?>">Aceitar!</a>
+                        <a href="<?php echo INCLUDE_PATH ?>solicitacoes?rejeitar=<?php echo $value['id_from'] ?>">Rejeitar!</a>
                     </td>
                    </tr>
                 <?php } ?>
