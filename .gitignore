@@ -1,1 +1,4 @@
 vendor/
+
+
+Remover diretório que já foi commitado => git rm -r --cached <diretório>
